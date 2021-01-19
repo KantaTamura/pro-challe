@@ -29,10 +29,10 @@ int main(void) {
     while((c = getchar()) != QUIT_CHAR) {
         if(isprint(c)) {
             // 印字可能文字の場合：そのまま表示．
-            printf("char %c\n", c);
+            printf("char %c\f\r", c);
         } else {
             // 制御文字の場合：16進で出力．
-            printf("<%04X>", c);
+            printf("<%04X>\f\r", c);
             if(c == '\n') fputs("\r\n", stdout);
         }
     }
