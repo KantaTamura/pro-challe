@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int x;
+    int a, b;
     while(1) {
-        scanf("%d%*c", &x);
-        if (x == 0) break;
-        printf("%d\n", x*x*x);
-        }
-        return 0;
+        scanf("%d %d%*c", &a, &b);
+        if (a == 0 && b == 0) break;
+        printf("%d %d\n", a*b, 2*(a+b));
+    }
+    return 0;
 }
