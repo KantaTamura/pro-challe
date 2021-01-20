@@ -124,6 +124,10 @@ void print_question(Data* data) {
     }
 }
 
+void get_difficulty(Data* data, char buf[64]) {
+    strcpy(buf, select_diff[data->difficulty_id]);
+}
+
 void exit_pro() {
     allow_cooked_mode();
     system("clear");

@@ -6,6 +6,6 @@ int main() {
         scanf("%d%*c", &x);
         if (x == 0) break;
         printf("%d\n", x*x*x);
-    }
-    return 0;
+        }
+        return 0;
 }

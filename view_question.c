@@ -57,7 +57,9 @@ void print(Data* data) {
 }
 
 void print_details(Data* data) {
-    printf("難易度: %d\f\r", data->difficulty_id);
+    char diff[64];
+    get_difficulty(data, diff);
+    printf("難易度: %25s\f\r", diff);
     printf("問題文: %25s\f\r", data->question[data->question_id]);
     printf("\f\r");
 }
