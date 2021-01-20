@@ -10,6 +10,7 @@ void allow_question(Data* data) {
 
     while (1) {
         print(data);
+        printf("\f\r");
         printf("問題を開始してもいいですか？\f\r");
         for (int i = 0; i < 2; i++) {
             printf("%c %s\f\r", arrow_data[i], allow_data[i]);

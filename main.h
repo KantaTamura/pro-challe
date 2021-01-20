@@ -26,6 +26,7 @@ typedef struct {
     int  question_id;       // 問題番号
     char question[4][64];   // 問題リスト
     FILE* question_fp;      // 問題本文のポインタ
+    FILE* result_fp;        // 解答ファイルのポインタ
 } Data;
 
 // console.c
@@ -54,3 +55,7 @@ void print_problem(Data* data);
 
 // question_file.c
 void get_question_file(Data* data);
+
+// compile_file.c
+void solve_and_compile(Data* data);
+

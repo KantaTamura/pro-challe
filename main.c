@@ -19,9 +19,12 @@ int main(void) {
     // viwe question
     // 問題のファイルのファイルポインタを入手
     get_question_file(&data);
-        
+
     // 許可
     allow_question(&data);
+
+    // resolve question
+    solve_and_compile(&data);
 
     // コンソールをCookedモードに
     allow_cooked_mode();
