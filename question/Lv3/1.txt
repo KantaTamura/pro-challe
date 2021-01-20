@@ -1,0 +1,28 @@
+## Print Many Hello World ##
+
+100 個の "Hello World" を出力するプログラムを作成して下さい。
+
+# Input
+この問題に入力はありません。
+
+# Output
+各行に "Hello World" と書かれた 100 行の文字列を出力して下さい。
+
+# Sample Input
+No input
+
+# Sample Output
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+.
+.
+.
+.
+.
+.
+Hello World
