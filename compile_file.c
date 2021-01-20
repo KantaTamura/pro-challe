@@ -12,11 +12,7 @@ void solve_and_compile(Data* data) {
 
     system("gcc ./result/solve.c -o ./result/result 2> ./result/error.txt");
 
-    system("./result/result > ./result/result.txt");
-
-    system("clear");
-
-    system("cat ./result/result.txt");
-    
-    
+    char exe[64] = "./result/result > ./result/result.txt < ";
+    strcat(exe, data->input_file);
+    system(exe);
 }

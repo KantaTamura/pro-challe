@@ -91,23 +91,23 @@ void question_select_menu(Data* data) {
         switch (arrow) {
         case ArrNone:
             break;
-            
+
         case ArrUp:
             if (data->question_id == 0) break;
-            
+
             arrow_point[data->question_id] = ' ';
             data->question_id -= 1;
             arrow_point[data->question_id] = '>';
             break;
-            
+
         case ArrDown:
             if (data->question_id == 3) break;
-            
+
             arrow_point[data->question_id] = ' ';
             data->question_id += 1;
             arrow_point[data->question_id] = '>';
             break;
-            
+
         default:
             break;
         }
@@ -126,5 +126,6 @@ void print_question(Data* data) {
 
 void exit_pro() {
     allow_cooked_mode();
+    system("clear");
     exit(-1);
 }

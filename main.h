@@ -27,6 +27,7 @@ typedef struct {
     char question[4][64];   // 問題リスト
     FILE* question_fp;      // 問題本文のポインタ
     FILE* result_fp;        // 解答ファイルのポインタ
+    char input_file[64];    // 標準入力保存ファイルへのパス
 } Data;
 
 // console.c
