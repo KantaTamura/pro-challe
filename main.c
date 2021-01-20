@@ -1,12 +1,8 @@
 #include "main.h"
 
-void exit_pro();
-
-
-
 int main(void) {
-    Data data = { 0, 0, "" };
-    
+    Data data = { 0, 0, "", 0 };
+
     // コンソールをRawモードに
     allow_raw_mode();
 
@@ -21,8 +17,11 @@ int main(void) {
     question_select_menu(&data);
 
     // viwe question
-    printf("難易度: %d\f\r問題文: %25s\f\r", data.difficulty_id, data.question[data.question_id]);
-    
+    // 問題のファイルのファイルポインタを入手
+    get_question_file(&data);
+        
+    // 許可
+    allow_question(&data);
 
     // コンソールをCookedモードに
     allow_cooked_mode();

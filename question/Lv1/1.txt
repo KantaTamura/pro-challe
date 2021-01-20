@@ -1,0 +1,10 @@
+## Hello World ##
+
+まずは、慣例に従って Hello World を作成してみましょう。
+"Hello World" と標準出力にプリントするプログラムを作成してください。
+
+# Input
+この問題に入力はありません。
+
+# Output
+Hello World

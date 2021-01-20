@@ -25,6 +25,7 @@ typedef struct {
     int  difficulty_id;     // 難易度番号
     int  question_id;       // 問題番号
     char question[4][64];   // 問題リスト
+    FILE* question_fp;      // 問題本文のポインタ
 } Data;
 
 // console.c
@@ -37,10 +38,19 @@ Arrow get_arrow();
 void copy_question          (char array[4][64], const char buf[4][64]);
 void copy_use_question      (Data* data);
 
-void difficulty_select_menu  (Data* data);
+void difficulty_select_menu (Data* data);
 void print_difficulty       ();
 
 void question_select_menu   (Data* data);
 void print_question         (Data* data);
 
 void exit_pro();
+
+// view_question.c
+void allow_question(Data* data);
+void print(Data* data);
+void print_details(Data* data);
+void print_problem(Data* data);
+
+// question_file.c
+void get_question_file(Data* data);
